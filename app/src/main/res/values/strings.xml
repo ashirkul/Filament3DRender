@@ -1,3 +1,54 @@
 <resources>
     <string name="app_name">Filament 3D render</string>
+    <string-array name="file_type">
+        <item>Gltf</item>
+        <item>Glb</item>
+    </string-array>
+
+    <string-array name="gltf">
+        <item>Models_old/female_base_LOD_S_out/female_base_LOD_S.gltf</item>
+        <item>Models_old/LittlMissAmericaFBX_out/LittlMissAmericaFBX.gltf</item>
+        <item>Models_old/male_base_LOD_S_out/male_base_LOD_S.gltf</item>
+        <item>Models_old/Male_LOD_A_Rig_Basebody_V011_out/Male_LOD_A_Rig_Basebody_V011.gltf</item>
+        <item>Models_old/Male_LOD_A_Rig_V09_out/Male_LOD_A_Rig_V09.gltf</item>
+        <item>Models_old/Male_LOD_A_Rig_V010_out/Male_LOD_A_Rig_V010.gltf</item>
+        <item>Models_2/female_base_LOD_S_out/female_base_LOD_S.gltf</item>
+        <item>Models_2/LittlMissAmericaFBX_out/LittlMissAmericaFBX.gltf</item>
+        <item>Models_2/male_base_LOD_S_out/male_base_LOD_S.gltf</item>
+        <item>Models_2/Male_LOD_A_Rig_Basebody_V011_out/Male_LOD_A_Rig_Basebody_V011.gltf</item>
+        <item>Models_2/Male_LOD_A_Rig_V09_out/Male_LOD_A_Rig_V09.gltf</item>
+        <item>Models_2/Male_LOD_A_Rig_V010_out/Male_LOD_A_Rig_V010.gltf</item>
+    </string-array>
+
+    <string-array name="gltf_dir">
+        <item>Models_old/female_base_LOD_S_out/</item>
+        <item>Models_old/LittlMissAmericaFBX_out/</item>
+        <item>Models_old/male_base_LOD_S_out/</item>
+        <item>Models_old/Male_LOD_A_Rig_Basebody_V011_out/</item>
+        <item>Models_old/Male_LOD_A_Rig_V09_out/</item>
+        <item>Models_old/Male_LOD_A_Rig_V010_out/</item>
+        <item>Models_2/female_base_LOD_S_out/</item>
+        <item>Models_2/LittlMissAmericaFBX_out/</item>
+        <item>Models_2/male_base_LOD_S_out/</item>
+        <item>Models_2/Male_LOD_A_Rig_Basebody_V011_out/</item>
+        <item>Models_2/Male_LOD_A_Rig_V09_out/</item>
+        <item>Models_2/Male_LOD_A_Rig_V010_out/</item>
+    </string-array>
+
+    <string-array name="glb">
+        <item>Models_old/female_base_LOD_S.glb</item>
+        <item>Models_old/LittlMissAmericaFBX.glb</item>
+        <item>Models_old/male_base_LOD_S.glb</item>
+        <item>Models_old/Male_LOD_A_Rig_Basebody_V011.glb</item>
+        <item>Models_old/Male_LOD_A_Rig_V09.glb</item>
+        <item>Models_old/Male_LOD_A_Rig_V010.glb</item>
+        <item>Models_2/female_base_LOD_S.glb</item>
+        <item>Models_2/LittlMissAmericaFBX.glb</item>
+        <item>Models_2/male_base_LOD_S.glb</item>
+        <item>Models_2/Male_LOD_A_Rig_Basebody_V011.glb</item>
+        <item>Models_2/Male_LOD_A_Rig_V09.glb</item>
+        <item>Models_2/Male_LOD_A_Rig_V010.glb</item>
+    </string-array>
+    <string name="file_type">file type</string>
+    <string name="file_pos"> file_pos</string>
 </resources>

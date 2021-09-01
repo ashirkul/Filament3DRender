@@ -16,6 +16,8 @@ class FullScreenHikemoji : AppCompatActivity() {
     private lateinit var modelViewer: ModelViewer
     private val fpsCounter = FPSCounter();
     private lateinit var uiHelper: UiHelper
+    private var fileTypePos : Int = -1
+    private var filePos : Int = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,13 +25,20 @@ class FullScreenHikemoji : AppCompatActivity() {
         choreographer = Choreographer.getInstance()
         modelViewer = ModelViewer(surfaceView)
         surfaceView.setOnTouchListener(modelViewer)
-        Log.d("Ashir","FullScreenHikemoji entered" )
+        fileTypePos = intent.getIntExtra(resources.getString(R.string.file_type),-1)
+        filePos = intent.getIntExtra(resources.getString(R.string.file_pos),-1)
+        Log.d("Ashir","File type - ${fileTypePos}  | FilePos  - ${filePos}" )
 //        loadGlb("")
 //        loadGlb("DamagedHelmet")
 //        loadGlb("DamagedHelmet")
 //        loadGlb("DamagedHelmet")
 
-        loadGltf("BusterDrone")
+//        loadGltf("BusterDrone")
+        if(fileTypePos == 0){
+            loadGltf("BusterDrone")
+        }else{
+            loadGlb("")
+        }
         //modelViewer.scene.skybox = Skybox.Builder().build(modelViewer.engine)
         loadEnvironment("venetian_crossroads_2k")
     }
@@ -77,8 +86,9 @@ class FullScreenHikemoji : AppCompatActivity() {
 
     private fun loadGlb(name: String) {
         //val buffer = readAsset("models/${name}.glb")
-
-        val buffer = readAsset("model1/LOD_A_Male.glb")
+        val array: Array<String> = resources.getStringArray(R.array.glb)
+        val fileName = array[filePos]
+        val buffer = readAsset("${fileName}")
 
         modelViewer.loadModelGlb(buffer)
         modelViewer.transformToUnitCube()
@@ -107,14 +117,14 @@ class FullScreenHikemoji : AppCompatActivity() {
     private fun loadEnvironment(ibl: String) {
         // Create the indirect light source and add it to the scene.
         var buffer = readAsset("envs/$ibl/${ibl}_ibl.ktx")
-        KTXLoader.createIndirectLight(modelViewer.engine, buffer).apply {
+        KtxLoader.createIndirectLight(modelViewer.engine, buffer).apply {
             intensity = 50_000f
             modelViewer.scene.indirectLight = this
         }
 
         // Create the sky   and add it to the scene.
         buffer = readAsset("envs/$ibl/${ibl}_skybox.ktx")
-        KTXLoader.createSkybox(modelViewer.engine, buffer).apply {
+        KtxLoader.createSkybox(modelViewer.engine, buffer).apply {
             modelViewer.scene.skybox = this
         }
     }
@@ -123,8 +133,19 @@ class FullScreenHikemoji : AppCompatActivity() {
         //val buffer = readAsset("models/${name}.gltf")
         //modelViewer.loadModelGltf(buffer) { uri -> readAsset("models/$uri") }
 
-        val buffer = readAsset("MaleModel/output.gltf")
-        modelViewer.loadModelGltf(buffer) { uri -> readAsset("model1/$uri") }
+//        val buffer = readAsset("LittlMissAmericaFBX_out/LittlMissAmericaFBX.gltf")
+//        val buffer = readAsset("Male_LOD_A_Rig_Basebody_V011_out/Male_LOD_A_Rig_Basebody_V011.gltf")
+//        val buffer = readAsset("male_base_LOD_S_out/male_base_LOD_S.gltf")
+//        val buffer = readAsset("Male_LOD_A_Rig_V09/Male_LOD_A_Rig_V09.gltf")
+//        val buffer = readAsset("Mayank_Male_LOD_A/output.gltf")
+
+        val filePathArray : Array<String> = resources.getStringArray(R.array.gltf)
+        val fileDirArray : Array<String> = resources.getStringArray(R.array.gltf_dir)
+        val fileName = filePathArray[filePos]
+        val fileDir = fileDirArray[filePos]
+        Log.d("Ashir","File - ${fileName}  | FileDir  - ${fileDir}" )
+        val buffer = readAsset("$fileName")
+        modelViewer.loadModelGltf(buffer) { uri -> readAsset("${fileDir}$uri") }
 
         modelViewer.transformToUnitCube()
     }

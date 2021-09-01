@@ -1,0 +1,406 @@
+{
+    "asset": {
+        "generator": "FBX2glTF v0.9.7",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "buffers": [
+        {
+            "byteLength": 435504,
+            "uri": "buffer.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 100464,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 111684,
+            "byteOffset": 100464,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 111684,
+            "byteOffset": 212148,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 74456,
+            "byteOffset": 323832,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4560,
+            "byteOffset": 398288,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5268,
+            "byteOffset": 402848,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5268,
+            "byteOffset": 408116,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3512,
+            "byteOffset": 413384,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4560,
+            "byteOffset": 416896,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5268,
+            "byteOffset": 421456,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5268,
+            "byteOffset": 426724,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3512,
+            "byteOffset": 431992,
+            "target": 34962
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Root Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 50232,
+            "bufferView": 0,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 9307,
+            "bufferView": 1,
+            "byteOffset": 0,
+            "min": [
+                -0.572897791862488,
+                0.0677335411310196,
+                -0.162205904722214
+            ],
+            "max": [
+                0.572897791862488,
+                1.70671916007996,
+                0.167819231748581
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 9307,
+            "bufferView": 2,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 9307,
+            "bufferView": 3,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 2280,
+            "bufferView": 4,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 439,
+            "bufferView": 5,
+            "byteOffset": 0,
+            "min": [
+                0.00859645660966635,
+                1.44794309139252,
+                0.0394604280591011
+            ],
+            "max": [
+                0.0964836850762367,
+                1.53589081764221,
+                0.127347633242607
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 439,
+            "bufferView": 6,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 439,
+            "bufferView": 7,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 2280,
+            "bufferView": 8,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 439,
+            "bufferView": 9,
+            "byteOffset": 0,
+            "min": [
+                -0.0965094342827797,
+                1.44794309139252,
+                0.0394346788525581
+            ],
+            "max": [
+                -0.0085707101970911,
+                1.53589081764221,
+                0.12737338244915
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 439,
+            "bufferView": 10,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 439,
+            "bufferView": 11,
+            "byteOffset": 0
+        }
+    ],
+    "images": [
+        {
+            "name": "file1",
+            "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "textures": [
+        {
+            "name": "file1",
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "materials": [
+        {
+            "name": "blinn2",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Phong",
+                    "isTruePBR": false
+                }
+            },
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.135064944624901,
+                    0.135064944624901,
+                    0.135064944624901,
+                    1.0
+                ],
+                "metallicFactor": 0.400000005960464,
+                "roughnessFactor": 0.69400280714035
+            }
+        },
+        {
+            "name": "blinn3",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Phong",
+                    "isTruePBR": false
+                }
+            },
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.135064944624901,
+                    0.135064944624901,
+                    0.135064944624901,
+                    1.0
+                ],
+                "metallicFactor": 0.400000005960464,
+                "roughnessFactor": 0.69400280714035
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "female_low_maya1:Group2",
+            "primitives": [
+                {
+                    "material": 0,
+                    "mode": 4,
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 1,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0
+                }
+            ]
+        },
+        {
+            "name": "female_eyeball_L",
+            "primitives": [
+                {
+                    "material": 1,
+                    "mode": 4,
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 5,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 4
+                }
+            ]
+        },
+        {
+            "name": "female_eyeball_R",
+            "primitives": [
+                {
+                    "material": 1,
+                    "mode": 4,
+                    "attributes": {
+                        "NORMAL": 10,
+                        "POSITION": 9,
+                        "TEXCOORD_0": 11
+                    },
+                    "indices": 8
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "children": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "name": "female_low_maya1:Group2",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "mesh": 0
+        },
+        {
+            "name": "female_eyeball_L",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "mesh": 1
+        },
+        {
+            "name": "female_eyeball_R",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "mesh": 2
+        }
+    ]
+}
