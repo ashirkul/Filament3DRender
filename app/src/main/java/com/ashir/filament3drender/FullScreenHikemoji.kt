@@ -117,14 +117,14 @@ class FullScreenHikemoji : AppCompatActivity() {
     private fun loadEnvironment(ibl: String) {
         // Create the indirect light source and add it to the scene.
         var buffer = readAsset("envs/$ibl/${ibl}_ibl.ktx")
-        KtxLoader.createIndirectLight(modelViewer.engine, buffer).apply {
+        KTXLoader.createIndirectLight(modelViewer.engine, buffer).apply {
             intensity = 50_000f
             modelViewer.scene.indirectLight = this
         }
 
         // Create the sky   and add it to the scene.
         buffer = readAsset("envs/$ibl/${ibl}_skybox.ktx")
-        KtxLoader.createSkybox(modelViewer.engine, buffer).apply {
+        KTXLoader.createSkybox(modelViewer.engine, buffer).apply {
             modelViewer.scene.skybox = this
         }
     }
@@ -132,12 +132,6 @@ class FullScreenHikemoji : AppCompatActivity() {
     private fun loadGltf(name: String) {
         //val buffer = readAsset("models/${name}.gltf")
         //modelViewer.loadModelGltf(buffer) { uri -> readAsset("models/$uri") }
-
-//        val buffer = readAsset("LittlMissAmericaFBX_out/LittlMissAmericaFBX.gltf")
-//        val buffer = readAsset("Male_LOD_A_Rig_Basebody_V011_out/Male_LOD_A_Rig_Basebody_V011.gltf")
-//        val buffer = readAsset("male_base_LOD_S_out/male_base_LOD_S.gltf")
-//        val buffer = readAsset("Male_LOD_A_Rig_V09/Male_LOD_A_Rig_V09.gltf")
-//        val buffer = readAsset("Mayank_Male_LOD_A/output.gltf")
 
         val filePathArray : Array<String> = resources.getStringArray(R.array.gltf)
         val fileDirArray : Array<String> = resources.getStringArray(R.array.gltf_dir)
