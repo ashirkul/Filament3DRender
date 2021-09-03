@@ -18,6 +18,8 @@
         <item>Models_3_normals/Male_LOD_A_Rig_Basebody_V011_out/Male_LOD_A_Rig_Basebody_V011.gltf</item>
         <item>Models_3_normals/Male_LOD_A_Rig_V09_out/Male_LOD_A_Rig_V09.gltf</item>
         <item>Models_3_normals/Male_LOD_A_Rig_V010_out/Male_LOD_A_Rig_V010.gltf</item>
+        <item>Models_3_normals/female_lod_s_texture_out/female_lod_s_texture.gltf</item>
+        <item>Models_3_normals/male_lod_s_texture_out/male_lod_s_texture.gltf</item>
     </string-array>
 
     <string-array name="gltf_dir">
@@ -33,6 +35,8 @@
         <item>Models_3_normals/Male_LOD_A_Rig_Basebody_V011_out/</item>
         <item>Models_3_normals/Male_LOD_A_Rig_V09_out/</item>
         <item>Models_3_normals/Male_LOD_A_Rig_V010_out/</item>
+        <item>Models_3_normals/female_lod_s_texture_out/</item>
+        <item>Models_3_normals/male_lod_s_texture_out/</item>
     </string-array>
 
     <string-array name="glb">
@@ -48,6 +52,8 @@
         <item>Models_3_normals/Male_LOD_A_Rig_Basebody_V011.glb</item>
         <item>Models_3_normals/Male_LOD_A_Rig_V09.glb</item>
         <item>Models_3_normals/Male_LOD_A_Rig_V010.glb</item>
+        <item>Models_3_normals/female_lod_s_texture.glb</item>
+        <item>Models_3_normals/male_lod_s_texture.glb</item>
         <item>model1/Female_Base_LOD_C_Fixed.glb</item>
         <item>model1/Male_LOD_B_Mod.glb</item>
         <item>model1/Male_LOD_C_Fixed.glb</item>

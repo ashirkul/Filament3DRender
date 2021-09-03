@@ -64,6 +64,10 @@ class MainActivity : Activity(), AdapterView.OnItemSelectedListener {
             startActivity(intent)
         }
         binding.multipleRender.setOnClickListener {
+            val intent = Intent(this,MultipleRender::class.java)
+            intent.putExtra(resources.getString(R.string.file_type), fileTypePos)
+            intent.putExtra(resources.getString(R.string.file_pos), filePos)
+            startActivity(intent)
         }
         binding.transparentRender.setOnClickListener {
 //            val intent = Intent(this,TransparentRenderActivity::class.java)
