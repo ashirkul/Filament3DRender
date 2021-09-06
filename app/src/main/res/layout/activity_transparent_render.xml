@@ -9,12 +9,37 @@
     <TextView
         android:id="@+id/sample_tv"
         android:layout_width="match_parent"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="Hello this is a sample text"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/sample_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/teal_200"
+        android:text="Hello this is a sample text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="This is a sample text view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <SurfaceView
         android:id="@+id/surface_view1"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,6 +48,7 @@
         android:foregroundGravity="center" />
 
     <SurfaceView
+        android:visibility="gone"
         android:id="@+id/surface_view2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

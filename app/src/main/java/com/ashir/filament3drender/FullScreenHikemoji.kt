@@ -21,7 +21,7 @@ class FullScreenHikemoji : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_screen_hikemoji)
         surfaceView = findViewById(R.id.surface_view)
-        modelViewerHelper = ModelViewerHelper(this,surfaceView,frameCallback,setTransparent = false)
+        modelViewerHelper = ModelViewerHelper(this,surfaceView,frameCallback)
         fileTypePos = intent.getIntExtra(resources.getString(R.string.file_type),-1)
         filePos = intent.getIntExtra(resources.getString(R.string.file_pos),-1)
         Log.d("Ashir","File type - ${fileTypePos}  | FilePos  - ${filePos}" )

@@ -31,7 +31,7 @@
         android:id="@+id/transparentRender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Transparent Render [In progress]"
+        android:text="Transparent Render"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/multipleRender"
