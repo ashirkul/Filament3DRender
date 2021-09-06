@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Filament3DRender">
         <activity
+            android:name=".MultipleRender"
+            android:exported="true" />
+        <activity
             android:name=".TransparentRenderActivity"
             android:exported="true" />
         <activity
